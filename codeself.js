@@ -59,5 +59,29 @@
  * *******************************
  * Properties and Methods (Classes)
  */
-
+ 
+class Human {
+          gender = 'male';
+          
+          printGender() {
+              console.log(this.gender);
+          }
+      }
+    
+    
+      class Person extends Human {
+            name = 'Jordan';
+            gender = 'female';
+          
+          printMyName = () => {
+              console.log(this.name);
+          }
+      }
+    
+      const person = new Person();
+      person.printMyName();
+      person.printGender();
+    
+// The purpose of this is to show the use of ES7 syntax writing 
+// Using Arrow functions and now using the super or constructor method calls
  
